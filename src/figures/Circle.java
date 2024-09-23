@@ -16,9 +16,21 @@ public class Circle{
 
     @Override
     public String toString() {
-        return "figures.Circle{" +
+        return "Circle{" +
                 "c=" + center +
                 ", r=" + r +
                 '}';
+    }
+
+    public double area(){
+        return r*r*Math.PI;
+    }
+
+    public boolean intersectsWith(Circle other){
+        double dist = center.distanceTo(other.center);
+        if(dist > this.r+ other.r || dist+this.r < other.r || dist+other.r < this.r)
+            return false;
+        else
+            return true;
     }
 }

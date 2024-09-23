@@ -11,7 +11,7 @@ public class Triangle{
 
     @Override
     public String toString() {
-        return "figures.Triangle{" +
+        return "Triangle{" +
                  vertexA +
                 ", " + vertexB +
                 ", " + vertexC +
