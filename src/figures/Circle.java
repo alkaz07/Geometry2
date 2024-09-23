@@ -1,6 +1,6 @@
 package figures;
 
-public class Circle{
+public class Circle extends Figure{
     Point center;
     double r;
 
@@ -20,6 +20,11 @@ public class Circle{
                 "c=" + center +
                 ", r=" + r +
                 '}';
+    }
+
+    @Override
+    public double perimeter() {
+        return 2*Math.PI*r;
     }
 
     public double area(){

@@ -1,10 +1,19 @@
 import figures.Circle;
+import figures.Figure;
 import figures.Point;
 import figures.Triangle;
 
 public class Main {
     public static void main(String[] args) {
-        example2();
+        example3();
+    }
+
+    private static void example3() {
+        //Figure fig0 = new Figure(); // Нельзя создать абстрактную фигуру
+        Figure fig1 = new Triangle(new Point(0,0), new Point(4, 0), new Point(0, 3));
+        Figure fig2 = new Circle(new Point(45, -84), 4);
+        System.out.println("площадь fig1 "+fig1.area());
+        System.out.println("площадь fig2 "+fig2.area());
     }
 
     private static void example2() {
